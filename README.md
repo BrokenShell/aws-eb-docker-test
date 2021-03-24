@@ -3,10 +3,12 @@
 docker build . -t aws-test
 ```
 
+
 ## Local Run (not required for AWS)
 ```
 docker run -it -p 5000:5000 aws-test uvicorn app.main:app --host=0.0.0.0 --port=5000
 ```
+
 
 ## EB Configuration
 ```
@@ -30,10 +32,12 @@ Select a platform branch.
 eb create
 ```
 
+
 ## EB Deploy AWS (updates)
 ```
 eb deploy
 ```
+
 
 ## EB Run Remote Web App
 ```
